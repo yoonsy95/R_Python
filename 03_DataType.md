@@ -8,8 +8,6 @@
 | ------ | ------ |
 | `100L` | 정수형 |
 
- #
-
 2. 문자열(character): 하나 혹은 둘 이상의 문자의 집합
 
    `'홍길동'`
@@ -18,12 +16,7 @@
 
    `'홍'`
 
- #
-
 3. 논리형(logical): `TRUE(T)`, `FALSE(F)`
-
-
-#
 
 4. 복소수형(comoplex): 허수 // `4-3i`
 
@@ -37,21 +30,13 @@
 
    `var1 = NULL `=> 데이터가 존재하지 않음
 
- #
-
 2. NA: Not Available: 결측값, 실제로 사용 불가함
-
- #
 
 3. NaN: Not Available Number
 
     Not A Number      : 연산 불가한 숫자
 
- #
-
 4. Inf: infinity, 양의 무한대
-
- #
 
 5. -Inf: 음의 무한대
 
