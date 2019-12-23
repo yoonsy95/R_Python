@@ -20,8 +20,6 @@
   ifelse( condition, T, F )
   ```
 
-  
-
   #
 
 #### 반복문( for, while )
@@ -30,27 +28,27 @@
 
 - for문
 
-- - 반복 횟수만큼 반복 실행
+  - 반복 횟수만큼 반복 실행
 
-    ```r
-    for (var1 in numArange) {
-        ...
-    }
-    ```
+  ```r
+  for (var1 in numArange) {
+      ...
+  }
+  ```
 
-    
+  
 
 - while문 
 
-- - 조건이 참일 동안 반복 실행
+  - 조건이 참일 동안 반복 실행
 
-    ```r
-    while( condition ) {
-        ...
-    }
-    ```
+  ```r
+  while( condition ) {
+      ...
+  }
+  ```
 
-    #
+  #
 
 #### 연습문제
 
