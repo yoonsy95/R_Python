@@ -10,8 +10,7 @@
  
 
 - Web Scraping
-
-- - 하나의 웹 페이지에서 내가 원하는 부분을 추출하는 행
+  - 하나의 웹 페이지에서 내가 원하는 부분을 추출하는 행
   - `css(jQuery) selector`를 이용하여 원하는 정보 추출
   - `selector`를 이용하여 추출하기 힘든 친구들 있음
     => `xpath` 사용
@@ -44,13 +43,14 @@
 
 - 4가지(`GET`, `POST`, `PUT`, `DELETE`)가 있는데 `GET`, `POST` 많이 씀
 
-- 1. `GET`
+  1. `GET`
 
-  2. - 전달 데이터를 url 뒤에 붙여서 전달
+  2. 전달 데이터를 url 뒤에 붙여서 전달
 
   3. `POST`
 
-  4. - 전달 데이터가 `request header`에 붙어서 전달
+  4. 전달 데이터가 `request header`에 붙어서 전달
+
 
  
 
