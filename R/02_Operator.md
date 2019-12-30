@@ -12,73 +12,85 @@ var1 / var2   # 자바: 33 => 정수 / 정수 = 정수
 
 ---
 
-몫 구하기 => 33
-
 ```R
+# 몫 구하기
 var1 %/% var2
-```
 
-나머지  구하기=> 1
-
-```R
+# 나머지 구하기
 var1 %% var2
 ```
 
- #
+
+
+ 
 
 #### 비교 연산자
 
 ---
 
-| `var1 == var2` | boolean보다 logical type이라는 말 많이 사용 |
-| -------------- | ------------------------------------------- |
-| `var1 != var2` | 결과값은 대문자로(true => X, TRUE =>O)      |
+```r
+var1 == var1     # boolean 보다 logical type이라는 말 많이 사용함
+var1 != var2     # 결과값은 대문자로 표현됨(true X, TRUE O)
+```
 
- #
+
+
+
 
 #### 논리 연산자
 
 ---
 
-AND 논리연산자 => &, &&: 양 쪽 값이 TRUE이면 TRUE
+- AND 논리 연산자 => &, &&: 양 쪽 값이 TRUE이면 TRUE
 
-| `TRUE & FALSE`  | FALSE |
-| --------------- | ----- |
-| `TRUE && FALSE` | FALSE |
+  ```r
+  TRUE & FALSE     # FALSE
+  TRUE && FALSE    # FALSE
+  ```
 
- #
+  
 
-OR 논리 연산자 => |, ||: 하나라도 TRUE이면 TRUE
+- OR 논리 연산자 => |, ||: 하나라도 TRUE이면 TRUE
 
-| `TRUE | FALSE`   | TRUE  |
-| ---------------- | ----- |
-| `FALSE || FALSE` | FALSE |
+  ```R
+  TRUE | FALSE     # TRUE
+  TRUE || FALSE    # FALSE
+  ```
 
- #
+  
 
-**&**와 **&&**의 **차이점**
+- **&와 &&의 차이점**
 
-| `c(TRUE, FALSE) & c(TRUE, TRUE)` | 일반적으로 같은 인덱스끼리 계산함     <br />벡터 연산값  => 벡터 |
-| ------------------------------- | ---------------------------------------------------------- |
-| `c(TRUE, FALSE) && c(TRUE, TRUE)` | &&이면 인덱스 0(첫번째 요소)만 계산함                      |
-| `c(TRUE, F, TRUE) & c(F, T)` | 경고 문자 뜸 <br /> recycling rule에 의하여 결과값 출력됨<br />`c(F, F, F)`  <br />사용 자제할 것 |
+  ```R
+  c(TRUE, FALSE) & c(TRUE, TRUE)          # 일반적으로 같은 인덱스끼리 계산함
+  							    	    # 벡터 연산값 => 벡터
+  
+  c(TRUE, FALSE) && c(TRUE, TRUE)         # 인덱스 0(첫번째 요소)만 계산함
+  
+  c(TRUE, FALSE, TRUE) & c(FALSE, TRUE)   # 경고 문자 뜸
+  										# recycling rule에 의하여 결과값 출력됨
+  										# c(T,F,T) & c(F,T,F)
+  										# 결과: c(F,F,F)
+  										# 사용 자제할 것
+  ```
 
-#
+  
 
+- NOT 논리 연산자
 
-NOT 논리 연산자
+  ```R
+  ! c(T, F, T, F)
+  ```
 
-```r
-! c(T, F, T, F)
-```
+  
 
- #
+#### 기타 함수
 
 ---
 
-R은 다른 언어와 마찬가지로 다양한 수학함수 내장
+- R은 다른 언어와 마찬가지로 다양한 수학함수 내장
 
-매우 많으니 모두 외우기보다는 필요할 때마다 찾아서 수행
+- 매우 많으니 모두 외우기보다는 필요할 때마다 찾아서 수행
 
 ```r
 abs(-3)
